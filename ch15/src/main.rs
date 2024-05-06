@@ -45,13 +45,13 @@ fn main() {
     //     big_city_with_volcano_park,
     //     Some(("Portland", "Mt. Tabor Park"))
     // );
-    use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, LinkedList};
-    let args: HashSet<String> = std::env::args().collect(); //collectでMapを作るには、(キー, 値)
-    let args: BTreeSet<String> = std::env::args().collect(); //のペアが必要になるので、この例では、
-    let args: LinkedList<String> = std::env::args().collect(); //文字列と整数の列をzipしたものを与えている
-                                                               // Collecting a map requires (key, value) pairs, so for this example,
-                                                               // zip the sequence of strings with a sequence of integers
-    let a = vec!["hoge", "fuga", "baka"];
-    let args: HashMap<String, usize> = a.iter().zip(0..).collect();
-    // let args: BTreeMap<String, usize> = std::env::args().zip(0..).collect();
+    // use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet, LinkedList};
+    // let args: HashSet<String> = std::env::args().collect(); //collectでMapを作るには、(キー, 値)
+    // let args: BTreeSet<String> = std::env::args().collect(); //のペアが必要になるので、この例では、
+    // let args: LinkedList<String> = std::env::args().collect(); //文字列と整数の列をzipしたものを与えている
+    //                                                            // Collecting a map requires (key, value) pairs, so for this example,
+    //                                                            // zip the sequence of strings with a sequence of integers
+    // let a = vec!["hoge", "fuga", "baka"];
+    // let args: HashMap<String, usize> = a.iter().zip(0..).collect();
+    // // let args: BTreeMap<String, usize> = std::env::args().zip(0..).collect();
 }
