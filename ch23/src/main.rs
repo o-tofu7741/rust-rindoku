@@ -30,5 +30,9 @@ fn is_zero(v: Value) -> bool {
     }
 }
 fn main() {
-    
+    let hoge = Value {
+        tag: Tag::Float,
+        union: FloatOrInt { f: 0.0 },
+    };
+    println!("{}", is_zero(hoge))
 }
